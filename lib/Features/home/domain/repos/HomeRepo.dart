@@ -3,10 +3,7 @@ import 'package:bookly_app/core/errors/failure.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class HomeRepo {
-  
-
   // left side -> error case,   right side ---> correct case
-  Future<Either<Failure ,List<BookEntity>>> fetchFeaturedBooks();
-  Future<Either<Failure ,List<BookEntity>>> fetchNewBooks();
-
+  Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks();
+  Future<Either<Failure, List<BookEntity>>> fetchNewBooks();
 }
